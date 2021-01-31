@@ -1,7 +1,6 @@
-const output = document.getElementById('output');
-const incrementButton = document.getElementById('increment-button')
-
-incrementButton.addEventListener('click', () => {
-  const currentNumber = Number.parseInt(output.innerText);
-  output.innerText = currentNumber + 1;
-});
+const editorArea = document.createElement('blockquote');
+const main = document.getElementById('main');
+editorArea.className = 'Editor';
+editorArea.contentEditable = 'true';
+editorArea.textContent = 'You can try to edit this text here';
+main.appendChild(editorArea)
